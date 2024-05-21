@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@layer base {
+    html {
+        @apply font-poppins
+    }
+    section {
+        @apply my-16 px-16;
+
+    }
+}

@@ -1,11 +1,20 @@
+import Header from "../Header/Header"
+import Hero from "../Hero/Hero"
 
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl bg-slate-900 text-slate-200">Hello world!</h1>
-    </>
+    <div id="app">
+      <div className="bg-slate-200 absolute left-1/2 -z-10">
+      </div>
+      <Header />
+      <Hero />
+    </div>
+
+
+
+
   )
 }
 

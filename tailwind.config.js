@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'hightlight': '#FAFAFA'
+
+      },
+      fontFamily: {
+        "poppins": ["Poppins", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
