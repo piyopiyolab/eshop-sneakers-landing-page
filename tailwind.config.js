@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'hightlight': '#FAFAFA'
+        'hightlight': '#f2f2f2'
 
       },
       fontFamily: {

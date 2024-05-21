@@ -29,7 +29,7 @@ function Header() {
             </a>
 
             {/* MENU */}
-            <div className={`flex flex-col sm:flex-row sm:justify-between  ${isNavOpen & windowWidth < breakpoint ? 'absolute right-4' : 'right-0'}`}>
+            <div className={`min-w-[60%] flex flex-col sm:flex-row sm:justify-between  ${isNavOpen & windowWidth < breakpoint ? 'absolute right-4' : 'right-0'}`}>
                 <img
                     className="max-w-8 sm:hidden self-end mb-2"
                     src={menuIcon}
@@ -40,20 +40,21 @@ function Header() {
                 {isNavOpen && (
                     <>
                         <nav className="flex flex-col sm:flex-row gap-4">
-                            <a href="">Home</a>
-                            <a href="">Shop</a>
-                            <a href="">Collection</a>
-                            <a href="">Customize</a>
+                            <a
+                                class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Home</a>
+                            <a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Shop</a>
+                            <a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Collection</a>
+                            <a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Customize</a>
                         </nav>
 
-                        <div className="flex flex-row mt-4 sm:mt-0 gap-10 sm:ml-4">
+                        <div className="flex flex-row mt-4 sm:mt-0 gap-8 sm:ml-4">
                             <img
-                                className="max-w-7"
+                                className="max-w-7 hover:scale-125 duration-300"
                                 src={searchIcon}
                                 alt="Looking for items in slick shop"
                             />
                             <img
-                                className="max-w-7"
+                                className="max-w-7 hover:scale-125 duration-300"
                                 src={cartIcon}
                                 alt="Looking for something in your cart?"
                             />
