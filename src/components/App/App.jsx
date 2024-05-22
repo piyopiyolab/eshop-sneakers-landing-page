@@ -4,6 +4,7 @@ import PopularPdt from "../PopularPdt/PopularPdt"
 import ProductList from "../ProductsList/ProductList"
 import PromoBanner from "../PromoBanner/PromoBanner"
 import Sponsor from "../Sponsor/Sponsor"
+import Testimonials from "../Testimonials/Testimonials"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       <PopularPdt />
       <PromoBanner />
       <ProductList />
-
+      <Testimonials />
     </div>
 
 

@@ -20,7 +20,7 @@ export const productData = [{
 {
 
     src: "/product/shoes4.png",
-    title: 'cute childish shoes',
+    title: 'Cute childish shoes',
     price: "399,99$",
     type: "child"
 },
@@ -58,5 +58,17 @@ export const productData = [{
 ]
 
 
-
+export const testimonialsData = [{
+    avatar: '',
+    name: 'Meythli Giovanni',
+    note: 3,
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+},
+{
+    avatar: '',
+    name: 'Viviane Odex',
+    note: 3,
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+},
+]
 
