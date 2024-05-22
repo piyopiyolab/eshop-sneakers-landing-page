@@ -22,7 +22,7 @@ function Header() {
     }, []);
 
     return (
-        <header className={`px-16 pt-16 flex justify-between sm:items-center  ${isNavOpen ? 'items-start' : 'items-center'}`}>
+        <header className={`container-c px-16 pt-16 flex justify-between sm:items-center  ${isNavOpen ? 'items-start' : 'items-center'}`}>
             {/* LOGO */}
             <a href="/">
                 <p className="text-5xl font-extrabold">Slick</p>
@@ -41,10 +41,10 @@ function Header() {
                     <>
                         <nav className="flex flex-col sm:flex-row gap-4">
                             <a
-                                class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Home</a>
-                            <a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Shop</a>
-                            <a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Collection</a>
-                            <a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Customize</a>
+                                className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Home</a>
+                            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Shop</a>
+                            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Collection</a>
+                            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="">Customize</a>
                         </nav>
 
                         <div className="flex flex-row mt-4 sm:mt-0 gap-8 sm:ml-4">

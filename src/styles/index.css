@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
+.container-c {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -12,7 +12,15 @@
         @apply font-poppins
     }
     section {
-        @apply my-16 px-16;
+        @apply py-16 px-16;
 
     }
 }
+
+@layer utilities {
+    /* Slider */
+.carousel-container {
+    @apply max-w-[50rem] w-[16rem] lg:w-auto 
+}
+}
+
