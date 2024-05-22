@@ -13,8 +13,13 @@ export default {
       },
       fontFamily: {
         "poppins": ["Poppins", "sans-serif"]
+      },
+      backgroundImage: {
+        'promoBannerImg': "url('/img/banner.png')"
       }
+
     },
   },
   plugins: [],
 }
+

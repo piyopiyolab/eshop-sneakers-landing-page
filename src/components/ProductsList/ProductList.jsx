@@ -21,12 +21,15 @@ after:align-middle	after:inline-block after:w-[1.5rem] after:h-[0.1rem] after:ml
 
       <div className='flex flex-wrap justify-evenly gap-y-16'>
         {filteredImages.map((image, index) => (
-          <article className='w-[20rem] border-2 rounded-md p-4 shadow-sm'>
+          <article
+            key={index}
+            className='w-[20rem] border-2 rounded-md p-4 shadow-sm'>
 
             <div className='h-[12rem] w-auto object-cover'>
+              <p className='relative bg-black text-white w-fit px-2 rounded-md -left-[17px] '>NEW</p>
               <img
                 className='w-full hover:scale-125 duration-300'
-                key={index} src={image.src} alt={`beautiful sneakers ${image.title} for ${image.type}`} data-type={image.type} />
+                src={image.src} alt={`beautiful sneakers ${image.title} for ${image.type}`} data-type={image.type} />
             </div>
             <p className=''>{image.title}</p>
 
